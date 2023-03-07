@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import { Body, Body2 } from "../src/components/Body";
+// import Header from "./components/Header";
+// import Counter from "../src/components/Counter";
+// import Counter2 from "../src/components/Counter";
+import ImageSlider from "./components/imageSlider";
+// const Body = () => {
+//   return <p> Hi</p>;
+// };
 
-function App() {
+// function Body () {
+//     return <p> Hi</p>;
+//   };
+
+const App = () => {
+  // function add(a, b) {
+  //   return a + b;
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageSlider />
+
+      {/* <Header
+        title="Hello"
+        num={5}
+        myArr={[10, 2, 3]}
+        myFunct={add}
+        myObj={{
+          a: 5,
+          b: 6,
+        }}
+      />
+      <Body2 />
+      <Body myFunct={add} text="Heyo" text2="Yeeeeeet" /> */}
     </div>
   );
-}
+};
 
 export default App;
