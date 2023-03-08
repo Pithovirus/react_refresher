@@ -20,11 +20,13 @@ const App = () => {
   // }
   const [visible, setState] = useState(true);
   const buttonText = visible ? "Hide" : "Show";
+  const slider = visible ? <ImageSlider /> : <div>Hidden Hidden</div>;
+
   return (
     <div className="App">
       {/* <ImageSlider /> */}
 
-      {visible ? <ImageSlider /> : <div>Hidden Hidden</div>}
+      {slider}
 
       <button onClick={() => setState(!visible)}>{buttonText}</button>
       {/* <button onClick={() => setVisible(true)}>UnHide</button> */}
