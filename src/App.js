@@ -3,7 +3,8 @@ import "./App.css";
 // import Header from "./components/Header";
 // import Counter from "../src/components/Counter";
 // import Counter2 from "../src/components/Counter";
-import ImageSlider from "./components/imageSlider";
+// import ImageSlider from "./components/imageSlider";
+import ImageSlider from "./components/imageSlider2";
 // const Body = () => {
 //   return <p> Hi</p>;
 // };
@@ -18,8 +19,9 @@ const App = () => {
   // }
   return (
     <div className="App">
+      whahash
+      {/* <ImageSlider /> */}
       <ImageSlider />
-
       {/* <Header
         title="Hello"
         num={5}
