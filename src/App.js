@@ -5,6 +5,7 @@ import "./App.css";
 // import Counter2 from "../src/components/Counter";
 // import ImageSlider from "./components/imageSlider";
 import ImageSlider from "./components/imageSlider2";
+import React, { useState } from "react";
 // const Body = () => {
 //   return <p> Hi</p>;
 // };
@@ -17,11 +18,16 @@ const App = () => {
   // function add(a, b) {
   //   return a + b;
   // }
+  const [visible, setVisible] = useState(true);
+
   return (
     <div className="App">
-      whahash
       {/* <ImageSlider /> */}
-      <ImageSlider />
+
+      {visible ? <ImageSlider /> : null}
+
+      <button onClick={() => setVisible(false)}>Hide</button>
+      <button onClick={() => setVisible(true)}>UnHide</button>
       {/* <Header
         title="Hello"
         num={5}

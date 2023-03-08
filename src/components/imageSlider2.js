@@ -34,6 +34,7 @@ const ImageSlider2 = () => {
           width: 200,
           height: 200,
         }}
+        alt="Images"
         src={state.images[state.idx]}
       />
       <button onClick={handleNext}>Next</button>
