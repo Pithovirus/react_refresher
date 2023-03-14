@@ -72,16 +72,18 @@
 // };
 
 // export default App;
-import { Forms } from "./components/Forms";
+// import { Forms } from "./components/Forms";
 import "./App.css";
 import React, { useState } from "react";
+import { ValidationForm } from "./components/ValidationForm";
 
 const App = () => {
   const { state, setVisible } = useState(true);
 
   return (
     <div className="App">
-      <Forms />
+      {/* <Forms /> */}
+      <ValidationForm />
     </div>
   );
 };
