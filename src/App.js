@@ -76,14 +76,15 @@
 import "./App.css";
 import React, { useState } from "react";
 import { ValidationForm } from "./components/ValidationForm";
-
+import FetchRandomUser from "./components/FetchRandomUser";
 const App = () => {
   const { state, setVisible } = useState(true);
 
   return (
     <div className="App">
       {/* <Forms /> */}
-      <ValidationForm />
+      {/* <ValidationForm /> */}
+      <FetchRandomUser />
     </div>
   );
 };
